@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="@dimen/padding_sides"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.linghao.projecttraining.activity.CreateGroupActivity">
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/et_groupname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入队伍名称"
+            android:inputType="textEmailAddress"
+            android:textSize="@dimen/text_medium" />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/et_group_introduction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入队伍简介"
+            android:inputType="textEmailAddress"
+            android:textSize="@dimen/text_medium" />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/et_group_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="请输入队伍类型"
+                android:inputType="textEmailAddress"
+                android:textSize="@dimen/text_medium" />
+        </android.support.design.widget.TextInputLayout>
+        <EditText
+            android:id="@+id/et_group_starttime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入开始时间"
+            android:inputType="textEmailAddress"
+            android:textSize="@dimen/text_medium" />
+    </android.support.design.widget.TextInputLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/finish_create_group"
+        android:text="finish"/>
+
+</LinearLayout>

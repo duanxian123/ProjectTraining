@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.linghao.projecttraining.activity.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/fl_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <!--<Button-->
+            <!--android:id="@+id/bt_test"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="联网" />-->
+    </FrameLayout>
+
+    <RadioGroup
+        android:layout_weight="0.03"
+        android:id="@+id/rg_main"
+        android:background="@android:color/white"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:padding="6dp">
+        <RadioButton
+            android:drawableTop="@drawable/rb_home_selector"
+            style="@style/botttom_tag_style"
+            android:id="@+id/homepage"
+            android:text="首页"
+             />
+        <RadioButton
+            android:drawableTop="@drawable/rb_create_selector"
+            style="@style/botttom_tag_style"
+            android:id="@+id/create_group"
+            android:text="创建队伍"
+             />
+        <RadioButton
+            android:drawableTop="@drawable/rb_find_selector"
+            style="@style/botttom_tag_style"
+            android:id="@+id/find_group"
+            android:text="寻找队伍"
+            />
+        <RadioButton
+            android:drawableTop="@drawable/rb_me_selector"
+            style="@style/botttom_tag_style"
+            android:id="@+id/me"
+            android:text="我"
+            />
+
+
+    </RadioGroup>
+
+</LinearLayout>
